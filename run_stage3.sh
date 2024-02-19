@@ -1,0 +1,15 @@
+accelerate launch --gpu_ids 0,1,2,3,4,5,6,7 --num_processes 8 --use_deepspeed --mixed_precision="fp16"  stage3_train_refined_model.py \
+ --pretrained_model_name_or_path="stabilityai/stable-diffusion-2-1-base" \
+  --image_encoder_path='facebook/dinov2-giant' \
+  --img_path='{image_path}' \
+  --json_path='{data.json}' \
+  --gen_t_img_path='{stage2_generate}' \
+  --output_dir="{output_dir}" \
+ --learning_rate=1e-5 \
+ --train_batch_size=16 \
+ --max_train_steps=1000000 \
+ --mixed_precision="fp16" \
+ --checkpointing_steps=5000  \
+ --noise_offset=0.1 \
+ --report_to=tensorboard \
+ --lr_warmup_steps 5000  \
