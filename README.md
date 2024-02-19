@@ -78,7 +78,7 @@ We provide 3 stage checkpoints available [here](https://drive.google.com/drive/f
 sh run_stage1.sh  & sh run_test_stage1.sh
 ```
 
-2. train stage2-inpaint
+2. train/test stage2-inpaint
 ```
 sh run_stage2.sh  & sh run_test_stage2.sh
 ```
