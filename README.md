@@ -10,6 +10,23 @@ You can directly download our test results from Google Drive: (1) [PCDMs vs SOTA
 The [PCDMs vs SOTA](https://drive.google.com/drive/folders/1q21tA3VsQqScecQ7m3_eUFxIPWUGYKAa?usp=drive_link) compares our method with several state-of-the-art methods e.g. ADGAN, PISE, GFLA, DPTN, CASD, NTED, PIDM. 
 Each row contains target_pose, source_image, ground_truth, ADGAN, PISE, GFLA, DPTN, CASD, NTED, PIDM, and PCDMs (ours) respectively.
 
+The weights can be obtained from [Google drive](https://drive.google.com/file/d/1H7WafGJrJZiblClJp0-AwcZrk1aNokWP/view?usp=drive_link).
+
+## Installation
+```
+# install diffusers
+pip install diffusers==0.24.0
+
+# clone code
+git clone https://github.com/tencent-ailab/PCDMs.git
+
+# download the models
+cd PCDMs
+mv {weights} ./PCDMs_ckpt.pt
+
+# then you can use the notebook
+```
+
 
 ## Methods
 
