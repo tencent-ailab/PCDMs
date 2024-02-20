@@ -1,5 +1,5 @@
 # PCDMs
- Implementation code：[Advancing Pose-Guided Image Synthesis with Progressive Conditional Diffusion Models](https://arxiv.org/pdf/2310.06313.pdf)
+Implementation code：[Advancing Pose-Guided Image Synthesis with Progressive Conditional Diffusion Models](https://arxiv.org/pdf/2310.06313.pdf), published at International Conference on Learning Representations (ICLR) 2024.
 
 
 ## Generated Results
