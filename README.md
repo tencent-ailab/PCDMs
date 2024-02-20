@@ -1,9 +1,13 @@
 # PCDMs
- Implementation code：[Advancing Pose-Guided Image Synthesis with Progressive Conditional Diffusion Models](https://arxiv.org/pdf/2310.06313.pdf)
+Implementation code：[Advancing Pose-Guided Image Synthesis with Progressive Conditional Diffusion Models](https://arxiv.org/pdf/2310.06313.pdf), accepted at International Conference on Learning Representations (ICLR) 2024.
 
 
 ## Generated Results
 ![PCDMs Motivation](imgs/compare_sota.png)
+
+![PCDMs results1](imgs/demo.png)
+
+![PCDMs results2](imgs/demo2.png)
 
 You can directly download our test results from Google Drive: (1) [PCDMs vs SOTA](https://drive.google.com/drive/folders/1q21tA3VsQqScecQ7m3_eUFxIPWUGYKAa?usp=drive_link) (2) [PCDMs Results](https://drive.google.com/drive/folders/1sjqMhZ79pugk2IHhW-whg_NASpx3BSew?usp=drive_link).
 
@@ -12,10 +16,20 @@ Each row contains target_pose, source_image, ground_truth, ADGAN, PISE, GFLA, DP
 
 The weights can be obtained from [Google drive](https://drive.google.com/file/d/1H7WafGJrJZiblClJp0-AwcZrk1aNokWP/view?usp=drive_link).
 
+Download dwpose weights (`dw-ll_ucoco_384.pth`, `yolox_l_8x8_300e_coco_20211126_140236-d3bd2b23.pth`) following [this](https://github.com/IDEA-Research/DWPose?tab=readme-ov-file#-dwpose-for-controlnet).
 ## Installation
 ```
-# install diffusers
+# install diffusers & pose extractor
 pip install diffusers==0.24.0
+pip install controlnet-aux==0.0.7
+
+
+# install DWPose which is dependent on MMDetection, MMCV and MMPose
+pip install -U openmim
+mim install mmengine
+mim install "mmcv>=2.0.1"
+mim install "mmdet>=3.1.0"
+mim install "mmpose>=1.1.0"
 
 # clone code
 git clone https://github.com/tencent-ailab/PCDMs.git
@@ -25,6 +39,7 @@ cd PCDMs
 mv {weights} ./PCDMs_ckpt.pt
 
 # then you can use the notebook
+{pcdms_demo.ipynb}
 ```
 
 
