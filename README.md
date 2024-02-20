@@ -18,8 +18,17 @@ The weights can be obtained from [Google drive](https://drive.google.com/file/d/
 
 ## Installation
 ```
-# install diffusers
+# install diffusers & pose extractor
 pip install diffusers==0.24.0
+pip install controlnet-aux==0.0.7
+
+
+# install DWPose which is dependent on MMDetection, MMCV and MMPose
+pip install -U openmim
+mim install mmengine
+mim install "mmcv>=2.0.1"
+mim install "mmdet>=3.1.0"
+mim install "mmpose>=1.1.0"
 
 # clone code
 git clone https://github.com/tencent-ailab/PCDMs.git
