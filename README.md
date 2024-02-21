@@ -44,6 +44,8 @@ mv {weights} ./PCDMs_ckpt.pt
 
 
 ## Methods
+![PCDMs inpainting](imgs/inpainting.png)
+
 
 ![PCDMs Motivation](imgs/diagram.png)
 
