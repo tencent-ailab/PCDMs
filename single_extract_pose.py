@@ -3,8 +3,6 @@ from PIL import Image
 import torchvision.transforms as transforms
 import torch
 
-
-
 def init_dwpose_detector(device):
     # specify configs, ckpts and device, or it will be downloaded automatically and use cpu by default
     det_config = './src/configs/yolox_l_8xb8-300e_coco.py'
@@ -20,16 +18,6 @@ def init_dwpose_detector(device):
         device=device
     )
     return dwpose_model.to(device)
-
-
-
-def split_list_into_chunks(lst, n):
-    chunk_size = len(lst) // n
-    chunks = [lst[i:i + chunk_size] for i in range(0, len(lst), chunk_size)]
-    if len(chunks) > n:
-        last_chunk = chunks.pop()
-        chunks[-1].extend(last_chunk)
-    return chunks
 
 
 def inference_pose(img_path, image_size=(1024, 1024)):
