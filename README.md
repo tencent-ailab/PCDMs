@@ -22,7 +22,8 @@ Download dwpose weights (`dw-ll_ucoco_384.pth`, `yolox_l_8x8_300e_coco_20211126_
 # install diffusers & pose extractor
 pip install diffusers==0.24.0
 pip install controlnet-aux==0.0.7
-
+pip install transformers==4.32.1
+pip install accelerate==0.24.1
 
 # install DWPose which is dependent on MMDetection, MMCV and MMPose
 pip install -U openmim
