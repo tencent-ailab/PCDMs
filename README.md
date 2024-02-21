@@ -5,8 +5,10 @@ Implementation code：[Advancing Pose-Guided Image Synthesis with Progressive Co
 ## Generated Results
 ![PCDMs Motivation](imgs/compare_sota.png)
 
+---
 ![PCDMs results1](imgs/demo.png)
 
+---
 ![PCDMs results2](imgs/demo2.png)
 
 You can directly download our test results from Google Drive: (1) [PCDMs vs SOTA](https://drive.google.com/drive/folders/1q21tA3VsQqScecQ7m3_eUFxIPWUGYKAa?usp=drive_link) (2) [PCDMs Results](https://drive.google.com/drive/folders/1sjqMhZ79pugk2IHhW-whg_NASpx3BSew?usp=drive_link).
@@ -47,10 +49,10 @@ mv {weights} ./PCDMs_ckpt.pt
 ## Methods
 ![PCDMs inpainting](imgs/inpainting.png)
 
-
+---
 ![PCDMs Motivation](imgs/diagram.png)
 
-
+---
 ![PCDMs Framework](imgs/frameworkv2.png)
 
 ## Dataset
