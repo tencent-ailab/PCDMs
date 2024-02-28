@@ -16,6 +16,8 @@ You can directly download our test results from Google Drive: (1) [PCDMs vs SOTA
 The [PCDMs vs SOTA](https://drive.google.com/drive/folders/1q21tA3VsQqScecQ7m3_eUFxIPWUGYKAa?usp=drive_link) compares our method with several state-of-the-art methods e.g. ADGAN, PISE, GFLA, DPTN, CASD, NTED, PIDM. 
 Each row contains target_pose, source_image, ground_truth, ADGAN, PISE, GFLA, DPTN, CASD, NTED, PIDM, and PCDMs (ours) respectively.
 
+
+We present a simplified version of PCDMs and only use stage2, utilizing training data from TikTok and DeepFashion. 
 The weights can be obtained from [Google drive](https://drive.google.com/drive/folders/1hnPm-GzaAtQKjgG_glhlQZieJ5g5Xd-y?usp=drive_link).
 
 Download dwpose weights (`dw-ll_ucoco_384.pth`, `yolox_l_8x8_300e_coco_20211126_140236-d3bd2b23.pth`) following [this](https://github.com/IDEA-Research/DWPose?tab=readme-ov-file#-dwpose-for-controlnet).
