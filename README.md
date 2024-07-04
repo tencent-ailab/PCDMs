@@ -6,7 +6,6 @@ Implementation code：[Advancing Pose-Guided Image Synthesis with Progressive Co
 However, due to limited computational power and data, the results are not very stable. Therefore, this is an experimental version.
 The weights can be obtained from [Google drive](https://drive.google.com/drive/folders/1hnPm-GzaAtQKjgG_glhlQZieJ5g5Xd-y?usp=drive_link).
 
-Download dwpose weights (`dw-ll_ucoco_384.pth`, `yolox_l_8x8_300e_coco_20211126_140236-d3bd2b23.pth`) following [this](https://github.com/IDEA-Research/DWPose?tab=readme-ov-file#-dwpose-for-controlnet).
 
 ## Generated Results (Extend)
 ![PCDMs results1](imgs/demo.png)
@@ -31,6 +30,7 @@ Each row contains target_pose, source_image, ground_truth, ADGAN, PISE, GFLA, DP
 
 
 ## Installation
+Download dwpose weights (`dw-ll_ucoco_384.pth`, `yolox_l_8x8_300e_coco_20211126_140236-d3bd2b23.pth`) following [this](https://github.com/IDEA-Research/DWPose?tab=readme-ov-file#-dwpose-for-controlnet).
 ```
 # install diffusers & pose extractor
 pip install diffusers==0.24.0
