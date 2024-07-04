@@ -2,14 +2,24 @@
 Implementation code：[Advancing Pose-Guided Image Synthesis with Progressive Conditional Diffusion Models](https://arxiv.org/pdf/2310.06313.pdf), accepted at International Conference on Learning Representations (ICLR) 2024.
 
 
-## Generated Results
-![PCDMs Motivation](imgs/compare_sota.png)
+**[Note!!!]:** We have released a simplified version of PCDMs, using only stage 2, and trained with data from TikTok and DeepFashion to test the model's generalization capability. 
+However, due to limited computational power and data, the results are not very stable. Therefore, this is an experimental version.
+The weights can be obtained from [Google drive](https://drive.google.com/drive/folders/1hnPm-GzaAtQKjgG_glhlQZieJ5g5Xd-y?usp=drive_link).
 
----
+Download dwpose weights (`dw-ll_ucoco_384.pth`, `yolox_l_8x8_300e_coco_20211126_140236-d3bd2b23.pth`) following [this](https://github.com/IDEA-Research/DWPose?tab=readme-ov-file#-dwpose-for-controlnet).
+
+## Generated Results (Extend)
 ![PCDMs results1](imgs/demo.png)
 
 ---
 ![PCDMs results2](imgs/demo2.png)
+
+
+
+## Generated Results (Paper)
+![PCDMs Motivation](imgs/compare_sota.png)
+
+
 
 You can directly download our test results from Google Drive: (1) [PCDMs vs SOTA](https://drive.google.com/drive/folders/1q21tA3VsQqScecQ7m3_eUFxIPWUGYKAa?usp=drive_link) (2) [PCDMs Results](https://drive.google.com/drive/folders/1sjqMhZ79pugk2IHhW-whg_NASpx3BSew?usp=drive_link).
 
@@ -17,10 +27,9 @@ The [PCDMs vs SOTA](https://drive.google.com/drive/folders/1q21tA3VsQqScecQ7m3_e
 Each row contains target_pose, source_image, ground_truth, ADGAN, PISE, GFLA, DPTN, CASD, NTED, PIDM, and PCDMs (ours) respectively.
 
 
-We present a simplified version of PCDMs and only use stage2, utilizing training data from TikTok and DeepFashion. 
-The weights can be obtained from [Google drive](https://drive.google.com/drive/folders/1hnPm-GzaAtQKjgG_glhlQZieJ5g5Xd-y?usp=drive_link).
+#### Third-party Usage: [ComfyUI_PCDMs](https://github.com/StartHua/ComfyUI_PCDMs)
 
-Download dwpose weights (`dw-ll_ucoco_384.pth`, `yolox_l_8x8_300e_coco_20211126_140236-d3bd2b23.pth`) following [this](https://github.com/IDEA-Research/DWPose?tab=readme-ov-file#-dwpose-for-controlnet).
+
 ## Installation
 ```
 # install diffusers & pose extractor
@@ -130,13 +139,11 @@ sh run_stage3.sh  & sh run_test_stage3.sh
 ## Citation
 If this work is useful to you, please consider citing our paper:
 ```
-@article{shen2023advancing,
+@inproceedings{shenadvancing,
   title={Advancing Pose-Guided Image Synthesis with Progressive Conditional Diffusion Models},
-  author={Shen, Fei and Ye, Hu and Zhang, Jun and Wang, Cong and Han, Xiao and Yang, Wei},
-  journal={arXiv preprint arXiv:2310.06313},
-  year={2023}
+  author={Shen, Fei and Ye, Hu and Zhang, Jun and Wang, Cong and Han, Xiao and Wei, Yang},
+  booktitle={The Twelfth International Conference on Learning Representations}
 }
-
 ```
 
 ## Contact
