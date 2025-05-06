@@ -6,6 +6,7 @@ Implementation code：[Advancing Pose-Guided Image Synthesis with Progressive Co
 However, due to limited computational power and data, the results are not very stable. Therefore, this is an experimental version.
 The weights can be obtained from [Google drive](https://drive.google.com/drive/folders/1hnPm-GzaAtQKjgG_glhlQZieJ5g5Xd-y?usp=drive_link).
 
+Try it out on Kaggle: [![Open In Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/aliaagheis/PCDM-demo)
 
 ## Generated Results (Extend)
 ![PCDMs results1](imgs/demo.png)
