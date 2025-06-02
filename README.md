@@ -147,5 +147,12 @@ If this work is useful to you, please consider citing our paper:
 }
 ```
 
+## 👉 **My other projects:**  
+- [IMAGDressing](https://github.com/muzishen/IMAGDressing): Interactive modular apparel generation; virtual dressing.  
+- [IMAGGarment-1](https://github.com/muzishen/IMAGGarment-1): Fine-grained controllable garment generation.  
+- [IMAGHarmony](https://github.com/muzishen/IMAGHarmony): Controllable image editing with consistent object layout.  
+- [IMAGPose](https://github.com/muzishen/IMAGPose): Pose-guided person generation with high fidelity.  
+- [RCDMs](https://github.com/muzishen/RCDMs): Rich-contextual conditional diffusion for story visualization.  
+
 ## Contact
 If you have any questions, please feel free to contact with me at shenfei140721@126.com.
